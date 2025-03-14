@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="qube_model" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <xacro:include filename="$(find qube_description)/urdf/qube.macro.xacro"/>
+
+    <link name="world"/>
+    <xacro:qube_model prefix="qube_1" base_x="0" base_y="0" base_z="0"/>
+    <xacro:qube_model prefix="qube_2" base_x="0.5" base_y="0.5" base_z="0"/>
+    <xacro:qube_model prefix="qube_3" base_x="-0.5" base_y="-0.5" base_z="0"/>
+    
+    
+</robot>
